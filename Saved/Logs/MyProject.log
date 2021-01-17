@@ -1,4 +1,4 @@
-﻿Log file open, 11/17/20 13:19:29
+﻿Log file open, 01/18/21 00:10:25
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
@@ -10,7 +10,7 @@ LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: MyProject
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.992617
+LogStats: Stats thread started at 0.553967
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -93,7 +93,7 @@ LogPluginManager: Mounting plugin ProceduralMeshComponent
 LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.148s to configure plugins.
+LogStreaming: Display: Took  0.126s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -150,743 +150,671 @@ LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 1
 LogStreaming: Display: Took  0.000s to delete old logs.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2020.11.17-12.19.29:827][  0]LogInit: Selected Device Profile: [Windows]
-[2020.11.17-12.19.29:827][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2020.11.17-12.19.29:836][  0]LogHAL: Display: Platform has ~ 16 GB [17111990272 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2020.11.17-12.19.29:836][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
-[2020.11.17-12.19.29:836][  0]LogInit: Going up to parent DeviceProfile []
-[2020.11.17-12.19.29:837][  0]LogInit: Computer: DESKTOP-Q01BN6R
-[2020.11.17-12.19.29:837][  0]LogInit: User: Adamk
-[2020.11.17-12.19.29:837][  0]LogInit: CPU Page size=4096, Cores=6
-[2020.11.17-12.19.29:838][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2020.11.17-12.19.29:838][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2020.11.17-12.19.29:838][  0]LogMemory: Platform Memory Stats for Windows
-[2020.11.17-12.19.29:838][  0]LogMemory: Process Physical Memory: 102.11 MB used, 102.11 MB peak
-[2020.11.17-12.19.29:838][  0]LogMemory: Process Virtual Memory: 85.79 MB used, 85.79 MB peak
-[2020.11.17-12.19.29:838][  0]LogMemory: Physical Memory: 4574.06 MB used,  11745.21 MB free, 16319.27 MB total
-[2020.11.17-12.19.29:838][  0]LogMemory: Virtual Memory: 4627.00 MB used,  11745.21 MB free, 134217728.00 MB total
-[2020.11.17-12.19.29:976][  0]LogInit: Using OS detected language (pl-PL).
-[2020.11.17-12.19.29:976][  0]LogInit: Using OS detected locale (pl-PL).
-[2020.11.17-12.19.29:977][  0]LogTextLocalizationManager: No specific localization for 'pl-PL' exists, so the 'pl' localization will be used.
-[2020.11.17-12.19.29:981][  0]LogStreaming: Display: Took  0.005s to InitEngineTextLocalization.
-[2020.11.17-12.19.29:982][  0]LogInit: Setting process to per monitor DPI aware
-[2020.11.17-12.19.30:021][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2020.11.17-12.19.30:021][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2020.11.17-12.19.30:324][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2020.11.17-12.19.30:324][  0]LogD3D11RHI: D3D11 adapters:
-[2020.11.17-12.19.30:395][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1660 SUPER' (Feature Level 11_0)
-[2020.11.17-12.19.30:395][  0]LogD3D11RHI:       5991/0/8159 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2020.11.17-12.19.30:398][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2020.11.17-12.19.30:398][  0]LogD3D11RHI:       0/0/8159 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2020.11.17-12.19.30:398][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2020.11.17-12.19.30:403][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2020.11.17-12.19.30:403][  0]LogD3D11RHI:     GPU DeviceId: 0x21c4 (for the marketing name, search the web for "GPU Device Id")
-[2020.11.17-12.19.30:404][  0]LogWindows: EnumDisplayDevices:
-[2020.11.17-12.19.30:404][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1660 SUPER' (P:1 D:1)
-[2020.11.17-12.19.30:404][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1660 SUPER' (P:0 D:0)
-[2020.11.17-12.19.30:404][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1660 SUPER' (P:0 D:0)
-[2020.11.17-12.19.30:404][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1660 SUPER' (P:0 D:0)
-[2020.11.17-12.19.30:405][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2020.11.17-12.19.30:405][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1660 SUPER
-[2020.11.17-12.19.30:405][  0]LogD3D11RHI:   Driver Version: 452.06 (internal:27.21.14.5206, unified:452.06)
-[2020.11.17-12.19.30:405][  0]LogD3D11RHI:      Driver Date: 8-12-2020
-[2020.11.17-12.19.30:405][  0]LogRHI: Texture pool is 4193 MB (70% of 5991 MB)
-[2020.11.17-12.19.30:457][  0]LogD3D11RHI: Async texture creation enabled
-[2020.11.17-12.19.30:483][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2020.11.17-12.19.30:486][  0]LogShaderCompilers: Guid format shader working directory is -28 characters bigger than the processId version (../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Intermediate/Shaders/WorkingDirectory/3044/).
-[2020.11.17-12.19.30:486][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Adamk/AppData/Local/Temp/UnrealShaderWorkingDir/628DBFC54DA1044D7C084F9071B35731/'.
-[2020.11.17-12.19.30:778][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2020.11.17-12.19.30:792][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2020.11.17-12.19.30:807][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2020.11.17-12.19.30:822][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2020.11.17-12.19.30:839][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2020.11.17-12.19.30:853][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2020.11.17-12.19.30:869][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2020.11.17-12.19.30:885][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2020.11.17-12.19.30:894][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:966][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2020.11.17-12.19.30:972][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2020.11.17-12.19.31:039][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2020.11.17-12.19.31:039][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2020.11.17-12.19.31:062][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2020.11.17-12.19.31:062][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2020.11.17-12.19.31:076][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2020.11.17-12.19.31:091][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2020.11.17-12.19.31:105][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2020.11.17-12.19.31:120][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2020.11.17-12.19.31:131][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2020.11.17-12.19.31:131][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2020.11.17-12.19.31:308][  0]LogXGEController: Cleaning working directory: C:/Users/Adamk/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2020.11.17-12.19.31:308][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2020.11.17-12.19.31:308][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2020.11.17-12.19.31:309][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2020.11.17-12.19.32:162][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2020.11.17-12.19.32:261][  0]LogDerivedDataCache: Loaded boot cache 0.10s 71MB C:/Users/Adamk/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
-[2020.11.17-12.19.32:262][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Adamk/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
-[2020.11.17-12.19.32:262][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2020.11.17-12.19.32:262][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2020.11.17-12.19.32:262][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2020.11.17-12.19.32:262][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2020.11.17-12.19.32:276][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2020.11.17-12.19.32:289][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Adamk/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2020.11.17-12.19.32:289][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2020.11.17-12.19.32:289][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2020.11.17-12.19.32:304][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2020.11.17-12.19.32:310][  0]LogSlate: Using FreeType 2.6.0
-[2020.11.17-12.19.32:312][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2020.11.17-12.19.32:438][  0]LogAssetRegistry: FAssetRegistry took 0.0285 seconds to start up
-[2020.11.17-12.19.32:758][  0]LogInit: Selected Device Profile: [Windows]
-[2020.11.17-12.19.32:987][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2020.11.17-12.19.33:010][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2020.11.17-12.19.33:011][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2020.11.17-12.19.33:011][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2020.11.17-12.19.33:011][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2020.11.17-12.19.33:038][  0]LogNetVersion: MyProject 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 1110078900)
-[2020.11.17-12.19.33:644][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.077800 seconds
-[2020.11.17-12.19.33:650][  0]LogUObjectArray: 38425 objects as part of root set at end of initial load.
-[2020.11.17-12.19.33:650][  0]LogUObjectAllocator: 6690864 out of 0 bytes used by permanent object pool.
-[2020.11.17-12.19.33:650][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2020.11.17-12.19.35:143][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2020.11.17-12.19.35:161][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2020.11.17-12.19.35:405][  0]SourceControl: Source control is disabled
-[2020.11.17-12.19.35:405][  0]SourceControl: Source control is disabled
-[2020.11.17-12.19.35:420][  0]SourceControl: Source control is disabled
-[2020.11.17-12.19.35:427][  0]SourceControl: Source control is disabled
-[2020.11.17-12.19.35:794][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2020.11.17-12.19.35:865][  0]LogOcInput: OculusInput pre-init called
-[2020.11.17-12.19.35:958][  0]LogEngine: Initializing Engine...
-[2020.11.17-12.19.35:959][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2020.11.17-12.19.35:961][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2020.11.17-12.19.35:961][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2020.11.17-12.19.35:961][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2020.11.17-12.19.35:961][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2020.11.17-12.19.36:144][  0]LogInit: Initializing FReadOnlyCVARCache
-[2020.11.17-12.19.36:171][  0]LogAIModule: Creating AISystem for world Untitled
-[2020.11.17-12.19.36:194][  0]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2020.11.17-12.19.36:257][  0]LogInit: FAudioDevice initialized.
-[2020.11.17-12.19.36:257][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2020.11.17-12.19.36:289][  0]LogDerivedDataCache: Saved boot cache 0.03s 71MB C:/Users/Adamk/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
-[2020.11.17-12.19.36:292][  0]LogInit: Texture streaming: Enabled
-[2020.11.17-12.19.36:321][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2020.11.17-12.19.36:337][  0]LogInit: Transaction tracking system initialized
-[2020.11.17-12.19.36:393][  0]BlueprintLog: New page: Editor Load
-[2020.11.17-12.19.36:598][  0]LocalizationService: Localization service is disabled
-[2020.11.17-12.19.36:941][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2020.11.17-12.19.36:942][  0]LogCook: Display: Mobile HDR setting 1
-[2020.11.17-12.19.36:942][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2020.11.17-12.19.36:942][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2020.11.17-12.19.36:942][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2020.11.17-12.19.36:942][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2020.11.17-12.19.36:942][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2020.11.17-12.19.36:981][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/' took 0.01s
-[2020.11.17-12.19.37:218][  0]SourceControl: Source control is disabled
-[2020.11.17-12.19.37:218][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2020.11.17-12.19.37:220][  0]LightingResults: New page: Lighting Build
-[2020.11.17-12.19.37:227][  0]MapCheck: New page: Map Check
-[2020.11.17-12.19.37:227][  0]LightingResults: New page: Lighting Build
-[2020.11.17-12.19.37:620][  0]LogAIModule: Creating AISystem for world Minimal_Default
-[2020.11.17-12.19.37:636][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2020.11.17-12.19.37:660][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2020.11.17-12.19.37:733][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 74,041ms to complete.
-[2020.11.17-12.19.37:733][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.515
-[2020.11.17-12.19.37:864][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.19.37:871][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.19.37:878][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.19.37:883][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.19.37:898][  0]LogCollectionManager: Loaded 0 collections in 0.001384 seconds
-[2020.11.17-12.19.37:948][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Saved/Collections/' took 0.01s
-[2020.11.17-12.19.37:948][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/Developers/Adamk/Collections/' took 0.01s
-[2020.11.17-12.19.37:948][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/Collections/' took 0.01s
-[2020.11.17-12.19.37:948][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2020.11.17-12.19.37:958][  0]LogContentBrowser: Native class hierarchy populated in 0.0085 seconds. Added 2572 classes and 603 folders.
-[2020.11.17-12.19.37:968][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2020.11.17-12.19.38:074][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2020.11.17-12.19.38:090][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
-[2020.11.17-12.19.38:134][  0]LogSlate: Took 0.000961 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2020.11.17-12.19.38:137][  0]LogSlate: Took 0.001087 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2020.11.17-12.19.38:143][  0]LogSlate: Took 0.000834 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2020.11.17-12.19.38:217][  0]LogRenderer: Reallocating scene render targets to support 1208x600 Format 10 NumSamples 1 (Frame:1).
-[2020.11.17-12.19.38:388][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2020.11.17-12.19.38:388][  0]LogLoad: (Engine Initialization) Total time: 12.41 seconds
-[2020.11.17-12.19.38:388][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2020.11.17-12.19.38:424][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2020.11.17-12.19.38:439][  0]LogSlate: Took 0.001290 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2020.11.17-12.19.38:457][  1]LogAssetRegistry: Asset discovery search completed in 6.0411 seconds
-[2020.11.17-12.19.38:458][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2020.11.17-12.19.38:458][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000061 seconds (updated 0 objects)
-[2020.11.17-12.19.40:769][  8]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.19.42:546][218]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.19.47:700][835]LogSlate: Window 'Open Level' being destroyed
-[2020.11.17-12.19.48:636][946]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.19.49:839][ 89]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.19.51:167][ 89]LogSlate: Window 'New Level' being destroyed
-[2020.11.17-12.19.51:174][ 89]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
-[2020.11.17-12.19.51:179][ 89]LogSlate: Took 0.000146 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2020.11.17-12.19.51:181][ 89]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.19.51:186][ 89]LightingResults: New page: Lighting Build
-[2020.11.17-12.19.51:187][ 89]LoadErrors: New page: Loading map: Template_Default.umap
-[2020.11.17-12.19.51:190][ 89]MapCheck: New page: Map Check
-[2020.11.17-12.19.51:190][ 89]LightingResults: New page: Lighting Build
-[2020.11.17-12.19.51:244][ 89]LogAIModule: Creating AISystem for world Untitled_1
-[2020.11.17-12.19.51:252][ 89]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2020.11.17-12.19.51:276][ 89]Cmd: MAP CHECKDEP NOCLEARLOG
-[2020.11.17-12.19.51:351][ 89]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 75,493ms to complete.
-[2020.11.17-12.19.51:352][ 89]LogFileHelpers: Loading map 'Template_Default' took 0.180
-[2020.11.17-12.19.51:439][ 94]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.19.57:791][817]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.20.00:994][198]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.20.01:965][313]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
-[2020.11.17-12.20.03:641][511]LogNavigationPoint: PostEditMove Clear paths rebuilt
-[2020.11.17-12.20.04:845][654]LogNavigationPoint: PostEditMove Clear paths rebuilt
-[2020.11.17-12.20.12:489][563]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.20.14:450][792]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.20.18:948][327]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.20.18:950][327]LogAssetEditorManager: Opening Asset editor for LevelScriptBlueprint /Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled
-[2020.11.17-12.20.19:347][327]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 116 classes and 0 folders.
-[2020.11.17-12.20.19:908][327]LogSlate: Took 0.001409 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2020.11.17-12.20.30:129][264]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.20.30:467][303]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
-[2020.11.17-12.20.32:779][577]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.20.52:104][876]LogSlate: Took 0.001405 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2020.11.17-12.22.45:924][255]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.23.48:272][721]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.26.16:601][475]LogSlate: Window 'Untitled* - Level Blueprint Editor' being destroyed
-[2020.11.17-12.26.16:605][475]LogSlate: Window 'Untitled* - Level Blueprint Editor' being destroyed
-[2020.11.17-12.26.18:152][657]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
-[2020.11.17-12.26.22:328][151]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.26.22:679][187]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
-[2020.11.17-12.26.24:243][372]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.26.24:601][412]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.26.25:993][554]Cmd: SELECT NONE
-[2020.11.17-12.26.26:706][639]Cmd: SELECT NONE
-[2020.11.17-12.26.27:198][698]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.26.27:998][779]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.26.29:528][941]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.26.33:423][390]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.29.49:666][931]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.29.49:746][931]LogSavePackage: Moving '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Saved/Untitled_1_Auto155DDC24045FE8FE7F1867481F7699282.tmp' to '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Saved/Autosaves/Temp/Untitled_1_Auto1.umap'
-[2020.11.17-12.29.49:751][931]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.067
-[2020.11.17-12.29.49:751][931]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.067
-[2020.11.17-12.32.05:875][264]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.32.06:810][371]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.32.06:811][371]LogAssetEditorManager: Opening Asset editor for LevelScriptBlueprint /Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled
-[2020.11.17-12.37.12:264][492]LogSlate: Window 'Save Level As' being destroyed
-[2020.11.17-12.37.23:698][859]LogSlate: Window 'Untitled* - Level Blueprint Editor' being destroyed
-[2020.11.17-12.37.23:702][859]LogSlate: Window 'Untitled* - Level Blueprint Editor' being destroyed
-[2020.11.17-12.37.24:744][981]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.37.24:844][993]LogTemp: Repeating last play command: Selected Viewport
-[2020.11.17-12.37.24:854][993]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.37.24:855][993]BlueprintLog: New page: Pre-Play auto-recompile
-[2020.11.17-12.37.24:858][993]LogPlayLevel: [PlayLevel] Compiling Untitled before play...
-[2020.11.17-12.37.24:984][993]LogPlayLevel: PlayLevel: Blueprint regeneration took 128 ms (1 blueprints)
-[2020.11.17-12.37.25:004][993]PIE: New page: PIE session: Untitled_1 (17 lis 2020, 14:37:25)
-[2020.11.17-12.37.25:004][993]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
-[2020.11.17-12.37.25:007][993]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002953s)
-[2020.11.17-12.37.25:008][993]LogAIModule: Creating AISystem for world Untitled_1
-[2020.11.17-12.37.25:008][993]LogPlayLevel: PIE: World Init took: (0.001048s)
-[2020.11.17-12.37.25:009][993]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.004545s)
-[2020.11.17-12.37.25:039][993]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2020.11.17-12.37.25:054][993]LogInit: FAudioDevice initialized.
-[2020.11.17-12.37.25:094][993]LogLoad: Game class is 'GameModeBase'
-[2020.11.17-12.37.25:101][993]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2020.11.17-13.37.25
-[2020.11.17-12.37.25:104][993]LogWorld: Bringing up level for play took: 0.002651
-[2020.11.17-12.37.25:137][993]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 10 classes and 0 folders.
-[2020.11.17-12.37.25:142][993]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 1,13
-[2020.11.17-12.37.25:142][993]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.37.29:042][457]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.29:891][559]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.30:149][590]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.30:516][634]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.30:966][688]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.31:091][703]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.31:449][746]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.31:741][781]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.32:216][838]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.32:450][866]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.32:650][890]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.32:950][926]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.33:066][940]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.33:283][966]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.33:466][988]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.33:641][  9]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.33:800][ 28]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.33:975][ 49]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.34:124][ 67]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.34:317][ 90]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.34:458][107]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.34:674][133]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.34:825][151]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.35:016][174]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.35:174][193]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.36:774][385]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.37:325][451]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.37:857][515]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.38:233][560]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.38:709][617]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.38:717][618]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.39:025][655]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.37.39:459][707]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.37.39:459][707]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.37.39:496][707]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.11.17-12.37.39:496][707]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.37.39:521][707]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.37.39:559][709]LogPlayLevel: Display: Destroying online subsystem :Context_5
-[2020.11.17-12.37.42:039][  6]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.37.44:986][341]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.37.47:022][580]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.37.47:072][586]LogTemp: Repeating last play command: Selected Viewport
-[2020.11.17-12.37.47:079][586]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.37.47:079][586]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.11.17-12.37.47:079][586]PIE: New page: PIE session: Untitled_1 (17 lis 2020, 14:37:47)
-[2020.11.17-12.37.47:079][586]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
-[2020.11.17-12.37.47:081][586]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001764s)
-[2020.11.17-12.37.47:082][586]LogAIModule: Creating AISystem for world Untitled_1
-[2020.11.17-12.37.47:082][586]LogPlayLevel: PIE: World Init took: (0.000718s)
-[2020.11.17-12.37.47:082][586]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002609s)
-[2020.11.17-12.37.47:106][586]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2020.11.17-12.37.47:118][586]LogInit: FAudioDevice initialized.
-[2020.11.17-12.37.47:148][586]LogLoad: Game class is 'GameModeBase'
-[2020.11.17-12.37.47:150][586]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2020.11.17-13.37.47
-[2020.11.17-12.37.47:150][586]LogWorld: Bringing up level for play took: 0.000405
-[2020.11.17-12.37.47:163][586]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0,85
-[2020.11.17-12.37.47:163][586]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.37.49:185][827]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.37.49:185][827]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.37.49:219][827]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.11.17-12.37.49:219][827]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.37.49:245][827]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.37.49:288][832]LogPlayLevel: Display: Destroying online subsystem :Context_6
-[2020.11.17-12.38.02:631][433]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
-[2020.11.17-12.38.05:454][763]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.38.07:005][928]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.38.07:495][979]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
-[2020.11.17-12.38.11:458][451]LogNavigationPoint: PostEditMove Clear paths rebuilt
-[2020.11.17-12.38.11:937][507]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.38.34:023][142]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.38.35:296][291]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.38.35:298][291]LogAssetEditorManager: Opening Asset editor for LevelScriptBlueprint /Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled
-[2020.11.17-12.39.08:548][252]LogTemp: Repeating last play command: Selected Viewport
-[2020.11.17-12.39.08:556][252]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.39.08:556][252]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.11.17-12.39.08:556][252]PIE: New page: PIE session: Untitled_1 (17 lis 2020, 14:39:08)
-[2020.11.17-12.39.08:556][252]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
-[2020.11.17-12.39.08:558][252]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001918s)
-[2020.11.17-12.39.08:559][252]LogAIModule: Creating AISystem for world Untitled_1
-[2020.11.17-12.39.08:559][252]LogPlayLevel: PIE: World Init took: (0.000724s)
-[2020.11.17-12.39.08:559][252]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002838s)
-[2020.11.17-12.39.08:588][252]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2020.11.17-12.39.08:601][252]LogInit: FAudioDevice initialized.
-[2020.11.17-12.39.08:635][252]LogLoad: Game class is 'GameModeBase'
-[2020.11.17-12.39.08:636][252]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2020.11.17-13.39.08
-[2020.11.17-12.39.08:636][252]LogWorld: Bringing up level for play took: 0.000492
-[2020.11.17-12.39.08:649][252]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0,637
-[2020.11.17-12.39.08:649][252]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.39.13:051][778]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.39.16:226][159]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.39.16:226][159]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.39.16:259][159]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.11.17-12.39.16:259][159]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.39.16:279][159]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.39.16:325][162]LogPlayLevel: Display: Destroying online subsystem :Context_8
-[2020.11.17-12.39.21:293][758]BlueprintLog: New page: Compile Untitled
-[2020.11.17-12.39.22:705][913]BlueprintLog: New page: Compile Untitled
-[2020.11.17-12.39.24:649][132]LogSlate: Window 'Untitled* - Level Blueprint Editor' being destroyed
-[2020.11.17-12.39.24:654][132]LogSlate: Window 'Untitled* - Level Blueprint Editor' being destroyed
-[2020.11.17-12.39.25:585][241]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.39.25:676][252]LogTemp: Repeating last play command: Selected Viewport
-[2020.11.17-12.39.25:684][252]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.39.25:684][252]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.11.17-12.39.25:684][252]PIE: New page: PIE session: Untitled_1 (17 lis 2020, 14:39:25)
-[2020.11.17-12.39.25:684][252]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
-[2020.11.17-12.39.25:686][252]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001832s)
-[2020.11.17-12.39.25:686][252]LogAIModule: Creating AISystem for world Untitled_1
-[2020.11.17-12.39.25:686][252]LogPlayLevel: PIE: World Init took: (0.000494s)
-[2020.11.17-12.39.25:686][252]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002436s)
-[2020.11.17-12.39.25:712][252]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2020.11.17-12.39.25:724][252]LogInit: FAudioDevice initialized.
-[2020.11.17-12.39.25:753][252]LogLoad: Game class is 'GameModeBase'
-[2020.11.17-12.39.25:754][252]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2020.11.17-13.39.25
-[2020.11.17-12.39.25:754][252]LogWorld: Bringing up level for play took: 0.000399
-[2020.11.17-12.39.25:766][252]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0,246
-[2020.11.17-12.39.25:767][252]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.39.28:369][563]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.39.28:744][608]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.39.29:086][649]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.39.29:511][700]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.39.29:852][741]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.39.30:210][784]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.39.31:236][907]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.39.31:769][971]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.39.32:078][  8]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.39.33:545][184]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.39.33:545][184]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.39.33:573][184]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.11.17-12.39.33:573][184]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.39.33:593][184]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.39.33:645][188]LogPlayLevel: Display: Destroying online subsystem :Context_9
-[2020.11.17-12.39.34:581][300]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.40.17:076][394]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.40.19:004][625]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.40.20:781][834]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.40.25:440][392]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.40.26:007][458]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.40.28:238][726]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.40.30:117][950]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.40.30:141][950]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.40.35:335][573]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.40.37:791][866]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.40.46:698][928]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.40.46:726][928]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.41.03:881][985]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
-[2020.11.17-12.41.05:181][141]LogTemp: Repeating last play command: Selected Viewport
-[2020.11.17-12.41.05:189][141]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.41.05:189][141]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.11.17-12.41.05:189][141]PIE: New page: PIE session: Untitled_1 (17 lis 2020, 14:41:05)
-[2020.11.17-12.41.05:189][141]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
-[2020.11.17-12.41.05:191][141]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002088s)
-[2020.11.17-12.41.05:192][141]LogAIModule: Creating AISystem for world Untitled_1
-[2020.11.17-12.41.05:192][141]LogPlayLevel: PIE: World Init took: (0.000776s)
-[2020.11.17-12.41.05:192][141]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003008s)
-[2020.11.17-12.41.05:217][141]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2020.11.17-12.41.05:231][141]LogInit: FAudioDevice initialized.
-[2020.11.17-12.41.05:257][141]LogLoad: Game class is 'GameModeBase'
-[2020.11.17-12.41.05:258][141]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2020.11.17-13.41.05
-[2020.11.17-12.41.05:258][141]LogWorld: Bringing up level for play took: 0.000441
-[2020.11.17-12.41.05:271][141]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0,741
-[2020.11.17-12.41.05:271][141]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.41.11:749][911]LogEditor: Converting actor from StaticMeshActor /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor to InteractiveFoliageActor
-[2020.11.17-12.41.17:372][911]LogSlate: Window 'Message' being destroyed
-[2020.11.17-12.41.17:398][911]LogEditorActor: Deleted 0 Actors (5.648 secs)
-[2020.11.17-12.41.17:415][911]LogEditor: Converted: Floor to Floor
-[2020.11.17-12.41.17:415][911]EditorErrors: New page: Actor Reattachment
-[2020.11.17-12.42.17:537][ 97]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor_2 : CollisionCylinder has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.42.17:538][ 97]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor_2 : CollisionCylinder has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.42.17:538][ 97]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor_2 : CollisionCylinder has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.42.17:538][ 97]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor_2 : CollisionCylinder has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.42.22:443][685]LogScript: Warning: Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty
-	Untitled_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Untitled_C_3
-	Function /Temp/Untitled_1.Untitled_C:ExecuteUbergraph_Untitled:0095
-[2020.11.17-12.42.22:443][685]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty". Blueprint:  Untitled Function:  Execute Ubergraph Untitled Graph:  EventGraph Node:  AddActorWorldRotation
-[2020.11.17-12.42.22:752][722]LogScript: Warning: Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty
-	Untitled_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Untitled_C_3
-	Function /Temp/Untitled_1.Untitled_C:ExecuteUbergraph_Untitled:0056
-[2020.11.17-12.42.22:752][722]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty". Blueprint:  Untitled Function:  Execute Ubergraph Untitled Graph:  EventGraph Node:  AddActorWorldRotation
-[2020.11.17-12.42.22:935][744]LogScript: Warning: Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty
-	Untitled_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Untitled_C_3
-	Function /Temp/Untitled_1.Untitled_C:ExecuteUbergraph_Untitled:0017
-[2020.11.17-12.42.22:935][744]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty". Blueprint:  Untitled Function:  Execute Ubergraph Untitled Graph:  EventGraph Node:  AddActorWorldRotation
-[2020.11.17-12.42.23:076][761]LogScript: Warning: Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty
-	Untitled_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Untitled_C_3
-	Function /Temp/Untitled_1.Untitled_C:ExecuteUbergraph_Untitled:00D4
-[2020.11.17-12.42.23:076][761]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty". Blueprint:  Untitled Function:  Execute Ubergraph Untitled Graph:  EventGraph Node:  AddActorWorldRotation
-[2020.11.17-12.42.23:293][787]LogScript: Warning: Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty
-	Untitled_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Untitled_C_3
-	Function /Temp/Untitled_1.Untitled_C:ExecuteUbergraph_Untitled:0095
-[2020.11.17-12.42.23:293][787]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty". Blueprint:  Untitled Function:  Execute Ubergraph Untitled Graph:  EventGraph Node:  AddActorWorldRotation
-[2020.11.17-12.42.23:485][810]LogScript: Warning: Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty
-	Untitled_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Untitled_C_3
-	Function /Temp/Untitled_1.Untitled_C:ExecuteUbergraph_Untitled:0056
-[2020.11.17-12.42.23:485][810]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty". Blueprint:  Untitled Function:  Execute Ubergraph Untitled Graph:  EventGraph Node:  AddActorWorldRotation
-[2020.11.17-12.42.23:668][832]LogScript: Warning: Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty
-	Untitled_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Untitled_C_3
-	Function /Temp/Untitled_1.Untitled_C:ExecuteUbergraph_Untitled:0017
-[2020.11.17-12.42.23:668][832]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty". Blueprint:  Untitled Function:  Execute Ubergraph Untitled Graph:  EventGraph Node:  AddActorWorldRotation
-[2020.11.17-12.42.23:785][846]LogScript: Warning: Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty
-	Untitled_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Untitled_C_3
-	Function /Temp/Untitled_1.Untitled_C:ExecuteUbergraph_Untitled:00D4
-[2020.11.17-12.42.23:785][846]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty". Blueprint:  Untitled Function:  Execute Ubergraph Untitled Graph:  EventGraph Node:  AddActorWorldRotation
-[2020.11.17-12.42.24:052][878]LogScript: Warning: Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty
-	Untitled_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Untitled_C_3
-	Function /Temp/Untitled_1.Untitled_C:ExecuteUbergraph_Untitled:0095
-[2020.11.17-12.42.24:052][878]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty". Blueprint:  Untitled Function:  Execute Ubergraph Untitled Graph:  EventGraph Node:  AddActorWorldRotation
-[2020.11.17-12.42.24:184][894]LogScript: Warning: Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty
-	Untitled_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Untitled_C_3
-	Function /Temp/Untitled_1.Untitled_C:ExecuteUbergraph_Untitled:0056
-[2020.11.17-12.42.24:185][894]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty". Blueprint:  Untitled Function:  Execute Ubergraph Untitled Graph:  EventGraph Node:  AddActorWorldRotation
-[2020.11.17-12.42.25:001][992]LogScript: Warning: Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty
-	Untitled_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Untitled_C_3
-	Function /Temp/Untitled_1.Untitled_C:ExecuteUbergraph_Untitled:0017
-[2020.11.17-12.42.25:001][992]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty". Blueprint:  Untitled Function:  Execute Ubergraph Untitled Graph:  EventGraph Node:  AddActorWorldRotation
-[2020.11.17-12.42.25:385][ 38]LogScript: Warning: Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty
-	Untitled_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Untitled_C_3
-	Function /Temp/Untitled_1.Untitled_C:ExecuteUbergraph_Untitled:0095
-[2020.11.17-12.42.25:385][ 38]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty". Blueprint:  Untitled Function:  Execute Ubergraph Untitled Graph:  EventGraph Node:  AddActorWorldRotation
-[2020.11.17-12.42.25:643][ 69]LogScript: Warning: Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty
-	Untitled_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Untitled_C_3
-	Function /Temp/Untitled_1.Untitled_C:ExecuteUbergraph_Untitled:0056
-[2020.11.17-12.42.25:643][ 69]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Floor_ExecuteUbergraph_Untitled_RefProperty". Blueprint:  Untitled Function:  Execute Ubergraph Untitled Graph:  EventGraph Node:  AddActorWorldRotation
-[2020.11.17-12.42.26:710][197]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.42.26:710][197]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.42.26:739][197]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.11.17-12.42.26:739][197]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.42.26:763][197]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.42.26:813][201]LogPlayLevel: Display: Destroying online subsystem :Context_10
-[2020.11.17-12.42.28:207][368]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.42.30:774][671]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.43.00:830][260]LogSavePackage: Moving '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Saved/Untitled_1_Auto235E71EF1478B044C81EC9CA90E877FA0.tmp' to '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Saved/Autosaves/Temp/Untitled_1_Auto2.umap'
-[2020.11.17-12.43.00:833][260]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.133
-[2020.11.17-12.43.00:833][260]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.133
-[2020.11.17-12.43.19:208][464]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.43.19:233][464]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.43.29:127][648]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.43.29:638][704]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.43.29:984][744]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
-[2020.11.17-12.43.30:001][744]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.43.56:103][865]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.44.01:110][463]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.44.23:098][ 84]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.44.28:473][727]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.44.36:324][665]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.44.36:326][665]LogAssetEditorManager: Opening Asset editor for LevelScriptBlueprint /Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled
-[2020.11.17-12.44.41:611][271]BlueprintLog: New page: Compile Untitled
-[2020.11.17-12.45.37:370][878]LogSlate: Window 'Editor Preferences' being destroyed
-[2020.11.17-12.45.37:375][878]LogSlate: Window 'Editor Preferences' being destroyed
-[2020.11.17-12.45.52:703][698]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.46.29:542][ 65]LogSlate: Window 'Editor Preferences' being destroyed
-[2020.11.17-12.46.29:546][ 65]LogSlate: Window 'Editor Preferences' being destroyed
-[2020.11.17-12.46.30:634][176]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.46.39:275][204]BlueprintLog: New page: Compile Untitled
-[2020.11.17-12.46.44:471][806]LogSlate: Window 'Untitled* - Level Blueprint Editor' being destroyed
-[2020.11.17-12.46.44:476][806]LogSlate: Window 'Untitled* - Level Blueprint Editor' being destroyed
-[2020.11.17-12.46.48:381][271]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.46.48:481][283]LogTemp: Repeating last play command: Selected Viewport
-[2020.11.17-12.46.48:490][283]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.46.48:490][283]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.11.17-12.46.48:490][283]PIE: New page: PIE session: Untitled_1 (17 lis 2020, 14:46:48)
-[2020.11.17-12.46.48:490][283]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
-[2020.11.17-12.46.48:492][283]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001957s)
-[2020.11.17-12.46.48:493][283]LogAIModule: Creating AISystem for world Untitled_1
-[2020.11.17-12.46.48:493][283]LogPlayLevel: PIE: World Init took: (0.000582s)
-[2020.11.17-12.46.48:493][283]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002656s)
-[2020.11.17-12.46.48:521][283]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2020.11.17-12.46.48:535][283]LogInit: FAudioDevice initialized.
-[2020.11.17-12.46.48:565][283]LogLoad: Game class is 'GameModeBase'
-[2020.11.17-12.46.48:566][283]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2020.11.17-13.46.48
-[2020.11.17-12.46.48:566][283]LogWorld: Bringing up level for play took: 0.000443
-[2020.11.17-12.46.48:579][283]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0,567
-[2020.11.17-12.46.48:579][283]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.46.50:310][489]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.46.50:627][527]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.46.51:010][573]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.46.51:336][612]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.46.51:476][629]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.46.51:777][665]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.46.52:436][744]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.46.53:185][834]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.46.53:535][876]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.46.53:927][923]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.46.54:777][ 25]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.46.55:003][ 52]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.46.55:294][ 87]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.46.57:060][299]PIE: Warning: Mobility of /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Floor : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
-[2020.11.17-12.46.58:019][414]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.46.58:020][414]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.46.58:051][414]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.11.17-12.46.58:051][414]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.46.58:076][414]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.46.58:120][417]LogPlayLevel: Display: Destroying online subsystem :Context_12
-[2020.11.17-12.47.00:836][742]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.47.26:580][830]LogSlate: Window 'Message Log' being destroyed
-[2020.11.17-12.47.26:584][830]LogSlate: Window 'Message Log' being destroyed
-[2020.11.17-12.47.27:540][945]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.47.35:260][866]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.47.42:508][735]LogAssetEditorManager: Opening Asset editor for StaticMesh /Engine/MapTemplates/SM_Template_Map_Floor.SM_Template_Map_Floor
-[2020.11.17-12.48.05:867][485]LogSlate: Window 'SM_Template_Map_Floor' being destroyed
-[2020.11.17-12.48.05:872][485]LogSlate: Window 'SM_Template_Map_Floor' being destroyed
-[2020.11.17-12.48.10:432][ 21]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.48.12:198][233]LogTemp: Repeating last play command: Selected Viewport
-[2020.11.17-12.48.12:206][233]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.48.12:206][233]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.11.17-12.48.12:207][233]PIE: New page: PIE session: Untitled_1 (17 lis 2020, 14:48:12)
-[2020.11.17-12.48.12:207][233]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
-[2020.11.17-12.48.12:208][233]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001746s)
-[2020.11.17-12.48.12:209][233]LogAIModule: Creating AISystem for world Untitled_1
-[2020.11.17-12.48.12:209][233]LogPlayLevel: PIE: World Init took: (0.000673s)
-[2020.11.17-12.48.12:209][233]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002733s)
-[2020.11.17-12.48.12:237][233]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2020.11.17-12.48.12:249][233]LogInit: FAudioDevice initialized.
-[2020.11.17-12.48.12:279][233]LogLoad: Game class is 'GameModeBase'
-[2020.11.17-12.48.12:280][233]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2020.11.17-13.48.12
-[2020.11.17-12.48.12:280][233]LogWorld: Bringing up level for play took: 0.000418
-[2020.11.17-12.48.12:292][233]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0,28
-[2020.11.17-12.48.12:293][233]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.48.16:614][750]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.48.16:614][750]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.48.16:647][750]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.11.17-12.48.16:647][750]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.48.16:669][750]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.48.16:722][756]LogPlayLevel: Display: Destroying online subsystem :Context_14
-[2020.11.17-12.48.17:557][856]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.48.18:997][ 24]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.48.24:132][640]LogTemp: Repeating last play command: Selected Viewport
-[2020.11.17-12.48.24:140][640]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.48.24:140][640]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.11.17-12.48.24:140][640]PIE: New page: PIE session: Untitled_1 (17 lis 2020, 14:48:24)
-[2020.11.17-12.48.24:140][640]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
-[2020.11.17-12.48.24:142][640]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001780s)
-[2020.11.17-12.48.24:142][640]LogAIModule: Creating AISystem for world Untitled_1
-[2020.11.17-12.48.24:142][640]LogPlayLevel: PIE: World Init took: (0.000698s)
-[2020.11.17-12.48.24:143][640]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002720s)
-[2020.11.17-12.48.24:169][640]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2020.11.17-12.48.24:181][640]LogInit: FAudioDevice initialized.
-[2020.11.17-12.48.24:212][640]LogLoad: Game class is 'GameModeBase'
-[2020.11.17-12.48.24:213][640]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2020.11.17-13.48.24
-[2020.11.17-12.48.24:213][640]LogWorld: Bringing up level for play took: 0.000426
-[2020.11.17-12.48.24:226][640]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0,213
-[2020.11.17-12.48.24:226][640]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.48.26:880][955]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.48.26:880][955]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.48.26:908][955]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.11.17-12.48.26:908][955]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2020.11.17-12.48.26:934][955]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.48.26:986][961]LogPlayLevel: Display: Destroying online subsystem :Context_15
-[2020.11.17-12.48.27:838][ 63]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.48.29:054][204]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.48.57:227][364]LogSlate: Window 'Save Level As' being destroyed
-[2020.11.17-12.48.57:329][364]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.48.57:443][364]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MazeGameAK" FILE="../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/MazeGameAK.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2020.11.17-12.48.57:574][364]LogSavePackage: Moving '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Saved/MazeGameAK57E3D7B546B021EE68F96C934F98ED2A.tmp' to '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/MazeGameAK.umap'
-[2020.11.17-12.48.57:589][364]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MazeGameAK_BuiltData" FILE="../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/MazeGameAK_BuiltData.uasset" SILENT=true
-[2020.11.17-12.48.57:600][364]LogSavePackage: Moving '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Saved/MazeGameAK_BuiltData452A8DFD45681D12946DFCA870E304E3.tmp' to '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/MazeGameAK_BuiltData.uasset'
-[2020.11.17-12.48.57:608][364]LogFileHelpers: Saving map 'MazeGameAK' took 0.373
-[2020.11.17-12.49.07:771][572]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.49.17:898][779]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.49.42:248][697]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.50.06:407][580]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.50.10:090][ 22]MapCheck: New page: Map Check
-[2020.11.17-12.50.10:107][ 22]Cmd: MAP REBUILD ALLVISIBLE
-[2020.11.17-12.50.10:108][ 22]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2020.11.17-12.50.10:196][ 22]LogMaterial: Display: Missing cached shader map for material FDebugViewModeMaterialProxy DefaultMaterial, compiling. 
-[2020.11.17-12.50.10:210][ 22]LogMaterial: Display: Missing cached shader map for material FDebugViewModeMaterialProxy MaterialInstanceDynamic_0, compiling. 
-[2020.11.17-12.50.11:052][ 22]LogShaderCompilers: Display: Shaders left to compile 2
-[2020.11.17-12.50.11:052][ 22]LogShaderCompilers: Display: Shaders left to compile 1
-[2020.11.17-12.50.11:052][ 22]TextureStreamingBuild: Display: Compiling optional shaders took 0.862 seconds.
-[2020.11.17-12.50.11:069][ 22]LogLevel: Display: Export Material TexCoord Scales took 0.016 seconds.
-[2020.11.17-12.50.11:076][ 22]TextureStreamingBuild: Display: Build Texture Streaming took 0.007 seconds.
-[2020.11.17-12.50.11:097][ 22]LightingResults: New page: Lighting Build - 17 lis 2020, 14:50:11
-[2020.11.17-12.50.11:146][ 22]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2020.11.17-12.50.11:850][ 22]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2020.11.17-12.50.11:868][ 22]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2020.11.17-12.50.12:402][ 22]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2020.11.17-12.50.12:402][ 22]LogSwarmInterface: [TryOpenConnection] Local Process ID is 3044
-[2020.11.17-12.50.19:083][ 22]LogStaticLightingSystem: Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
-[2020.11.17-12.50.19:084][ 22]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2020.11.17-12.50.19:084][ 22]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2020.11.17-12.50.19:084][ 22]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2020.11.17-12.50.19:084][ 22]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2020.11.17-12.50.19:084][ 22]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2020.11.17-12.50.19:253][ 22]Cmd: MAP CHECK DONTDISPLAYDIALOG
-[2020.11.17-12.50.19:254][ 22]MapCheck: New page: MazeGameAK - 17 lis 2020, 14:50:19
-[2020.11.17-12.50.19:339][ 22]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 85,643ms to complete.
-[2020.11.17-12.50.19:361][ 22]LogEditorBuildUtils: Build time 0:09
-[2020.11.17-12.50.19:370][ 22]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer MaterialInstanceDynamic_0, compiling. 
-[2020.11.17-12.50.19:378][ 22]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer MaterialInstanceDynamic_0, compiling. 
-[2020.11.17-12.50.19:408][ 22]LogShaderCompilers: Display: Shaders left to compile 4
-[2020.11.17-12.50.19:420][ 23]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer WorldGridMaterial, compiling. Is special engine material.
-[2020.11.17-12.50.19:427][ 23]LogShaderCompilers: Display: Shaders left to compile 2
-[2020.11.17-12.50.19:427][ 23]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer WorldGridMaterial, compiling. Is special engine material.
-[2020.11.17-12.50.19:430][ 23]LogShaderCompilers: Display: Shaders left to compile 2
-[2020.11.17-12.50.22:486][177]Job is a success!
-[2020.11.17-12.50.22:526][178]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.008s
-[2020.11.17-12.50.22:526][178]LogVolumetricLightmapImport:      Indirection Texture 16x16x16 = 0.0Mb
-[2020.11.17-12.50.22:526][178]LogVolumetricLightmapImport:      BrickData 5x5x5 = 0.0Mb
-[2020.11.17-12.50.22:526][178]LogVolumetricLightmapImport:      Bricks at Level
-[2020.11.17-12.50.22:526][178]LogVolumetricLightmapImport:          0: 100.0% covering 100.0% of volume
-[2020.11.17-12.50.22:526][178]LogVolumetricLightmapImport:          1: 0.0% covering 0.0% of volume
-[2020.11.17-12.50.22:526][178]LogVolumetricLightmapImport:          2: 0.0% covering 0.0% of volume
-[2020.11.17-12.50.22:540][178]LogTexture: Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 64X64)
-[2020.11.17-12.50.22:540][178]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 64X64)
-[2020.11.17-12.50.22:540][178]LogTexture: Display: Building textures: ShadowMapTexture2D_0 (G8, 32X32)
-[2020.11.17-12.50.22:591][178]Lightmass on DESKTOP-Q01BN6R: 1.59 sec total, 73 ms importing, 8 ms setup, 1.00 sec photons, 423 ms processing, 0 ms extra exporting [1/1 mappings]. Threads: 3.97 sec total, 58 ms processing.
-[2020.11.17-12.50.22:600][178]LogStaticLightingSystem: Illumination: 11.4 sec (4 ms encoding lightmaps, 1 ms encoding shadowmaps)
-[2020.11.17-12.50.22:600][178]LogStaticLightingSystem: Lightmap texture memory:  0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 2 textures
-[2020.11.17-12.50.22:600][178]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 1 textures
-[2020.11.17-12.50.23:085][178]DumpUnbuiltLightIteractions
-[2020.11.17-12.50.23:085][178]Lights with unbuilt interactions: 0
-[2020.11.17-12.50.23:085][178]
-[2020.11.17-12.50.23:085][178]Primitives with unbuilt interactions: 0
-[2020.11.17-12.50.23:091][178]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.50.23:136][179]Cmd: MAP CHECK NOTIFYRESULTS
-[2020.11.17-12.50.23:136][179]MapCheck: New page: MazeGameAK - 17 lis 2020, 14:50:23
-[2020.11.17-12.50.23:226][179]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 89,907ms to complete.
-[2020.11.17-12.50.25:588][462]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.50.25:687][474]LogTemp: Repeating last play command: Selected Viewport
-[2020.11.17-12.50.25:695][474]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
-[2020.11.17-12.50.25:695][474]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.11.17-12.50.25:695][474]PIE: New page: PIE session: MazeGameAK (17 lis 2020, 14:50:25)
-[2020.11.17-12.50.25:695][474]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_MazeGameAK
-[2020.11.17-12.50.25:697][474]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001860s)
-[2020.11.17-12.50.25:698][474]LogAIModule: Creating AISystem for world MazeGameAK
-[2020.11.17-12.50.25:698][474]LogPlayLevel: PIE: World Init took: (0.000660s)
-[2020.11.17-12.50.25:698][474]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MazeGameAK.MazeGameAK to /Game/UEDPIE_0_MazeGameAK.MazeGameAK (0.002809s)
-[2020.11.17-12.50.25:724][474]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2020.11.17-12.50.25:737][474]LogInit: FAudioDevice initialized.
-[2020.11.17-12.50.25:764][474]LogLoad: Game class is 'GameModeBase'
-[2020.11.17-12.50.25:765][474]LogWorld: Bringing World /Game/UEDPIE_0_MazeGameAK.MazeGameAK up for play (max tick rate 0) at 2020.11.17-13.50.25
-[2020.11.17-12.50.25:765][474]LogWorld: Bringing up level for play took: 0.000419
-[2020.11.17-12.50.25:778][474]PIE: Play in editor start time for /Game/UEDPIE_0_MazeGameAK -0,235
-[2020.11.17-12.50.25:778][474]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
-[2020.11.17-12.50.40:891][286]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
-[2020.11.17-12.50.40:891][286]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.50.40:920][286]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.11.17-12.50.40:920][286]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
-[2020.11.17-12.50.40:945][286]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.50.40:994][290]LogPlayLevel: Display: Destroying online subsystem :Context_16
-[2020.11.17-12.50.42:866][511]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.50.43:811][609]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.50.44:352][672]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
-[2020.11.17-12.50.45:401][796]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2020.11.17-12.50.47:574][ 54]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.50.48:049][109]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.50.48:576][171]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.50.48:986][219]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
-[2020.11.17-12.50.55:088][949]LogNavigationPoint: PostEditMove Clear paths rebuilt
-[2020.11.17-12.50.57:961][292]LogNavigationPoint: PostEditMove Clear paths rebuilt
-[2020.11.17-12.51.00:157][549]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.11.17-12.51.00:240][559]LogTemp: Repeating last play command: Selected Viewport
-[2020.11.17-12.51.00:248][559]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
-[2020.11.17-12.51.00:248][559]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.11.17-12.51.00:248][559]PIE: New page: PIE session: MazeGameAK (17 lis 2020, 14:51:00)
-[2020.11.17-12.51.00:248][559]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_MazeGameAK
-[2020.11.17-12.51.00:250][559]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001831s)
-[2020.11.17-12.51.00:250][559]LogAIModule: Creating AISystem for world MazeGameAK
-[2020.11.17-12.51.00:251][559]LogPlayLevel: PIE: World Init took: (0.000699s)
-[2020.11.17-12.51.00:251][559]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MazeGameAK.MazeGameAK to /Game/UEDPIE_0_MazeGameAK.MazeGameAK (0.002743s)
-[2020.11.17-12.51.00:279][559]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2020.11.17-12.51.00:291][559]LogInit: FAudioDevice initialized.
-[2020.11.17-12.51.00:322][559]LogLoad: Game class is 'GameModeBase'
-[2020.11.17-12.51.00:323][559]LogWorld: Bringing World /Game/UEDPIE_0_MazeGameAK.MazeGameAK up for play (max tick rate 0) at 2020.11.17-13.51.00
-[2020.11.17-12.51.00:323][559]LogWorld: Bringing up level for play took: 0.000414
-[2020.11.17-12.51.00:335][559]PIE: Play in editor start time for /Game/UEDPIE_0_MazeGameAK 0,323
-[2020.11.17-12.51.00:336][559]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
-[2020.11.17-12.51.05:541][182]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
-[2020.11.17-12.51.05:541][182]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.51.05:573][182]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.11.17-12.51.05:573][182]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
-[2020.11.17-12.51.05:598][182]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.11.17-12.51.05:646][186]LogPlayLevel: Display: Destroying online subsystem :Context_17
-[2020.11.17-12.51.06:955][342]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.51.10:329][747]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2020.11.17-12.51.11:193][848]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.11.17-12.51.11:197][848]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MazeGameAK" FILE="../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/MazeGameAK.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2020.11.17-12.51.11:323][848]LogSavePackage: Moving '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Saved/MazeGameAK14C116CD430C6D6C3E5B43B19C580315.tmp' to '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/MazeGameAK.umap'
-[2020.11.17-12.51.11:338][848]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MazeGameAK_BuiltData" FILE="../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/MazeGameAK_BuiltData.uasset" SILENT=true
-[2020.11.17-12.51.11:345][848]LogSavePackage: Moving '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Saved/MazeGameAK_BuiltData7D2EB46548092AF7A7D9EAB849788F25.tmp' to '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/MazeGameAK_BuiltData.uasset'
-[2020.11.17-12.51.13:610][119]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.10.25:931][  0]LogInit: Selected Device Profile: [Windows]
+[2021.01.17-23.10.25:931][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.01.17-23.10.25:938][  0]LogHAL: Display: Platform has ~ 16 GB [17111990272 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.01.17-23.10.25:938][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
+[2021.01.17-23.10.25:938][  0]LogInit: Going up to parent DeviceProfile []
+[2021.01.17-23.10.25:939][  0]LogInit: Computer: DESKTOP-Q01BN6R
+[2021.01.17-23.10.25:939][  0]LogInit: User: Adamk
+[2021.01.17-23.10.25:939][  0]LogInit: CPU Page size=4096, Cores=6
+[2021.01.17-23.10.25:939][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.01.17-23.10.25:939][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.01.17-23.10.25:939][  0]LogMemory: Platform Memory Stats for Windows
+[2021.01.17-23.10.25:939][  0]LogMemory: Process Physical Memory: 102.59 MB used, 102.59 MB peak
+[2021.01.17-23.10.25:939][  0]LogMemory: Process Virtual Memory: 85.98 MB used, 85.98 MB peak
+[2021.01.17-23.10.25:939][  0]LogMemory: Physical Memory: 4912.42 MB used,  11406.84 MB free, 16319.27 MB total
+[2021.01.17-23.10.25:939][  0]LogMemory: Virtual Memory: 4627.02 MB used,  11406.84 MB free, 134217728.00 MB total
+[2021.01.17-23.10.25:955][  0]LogInit: Using OS detected language (pl-PL).
+[2021.01.17-23.10.25:955][  0]LogInit: Using OS detected locale (pl-PL).
+[2021.01.17-23.10.25:956][  0]LogTextLocalizationManager: No specific localization for 'pl-PL' exists, so the 'pl' localization will be used.
+[2021.01.17-23.10.25:957][  0]LogStreaming: Display: Took  0.002s to InitEngineTextLocalization.
+[2021.01.17-23.10.25:958][  0]LogInit: Setting process to per monitor DPI aware
+[2021.01.17-23.10.25:984][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.01.17-23.10.25:984][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.01.17-23.10.26:179][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.01.17-23.10.26:179][  0]LogD3D11RHI: D3D11 adapters:
+[2021.01.17-23.10.26:253][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1660 SUPER' (Feature Level 11_0)
+[2021.01.17-23.10.26:253][  0]LogD3D11RHI:       5991/0/8159 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.01.17-23.10.26:254][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.01.17-23.10.26:254][  0]LogD3D11RHI:       0/0/8159 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.01.17-23.10.26:254][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.01.17-23.10.26:260][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.01.17-23.10.26:260][  0]LogD3D11RHI:     GPU DeviceId: 0x21c4 (for the marketing name, search the web for "GPU Device Id")
+[2021.01.17-23.10.26:260][  0]LogWindows: EnumDisplayDevices:
+[2021.01.17-23.10.26:260][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1660 SUPER' (P:1 D:1)
+[2021.01.17-23.10.26:260][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1660 SUPER' (P:0 D:0)
+[2021.01.17-23.10.26:260][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1660 SUPER' (P:0 D:0)
+[2021.01.17-23.10.26:261][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1660 SUPER' (P:0 D:0)
+[2021.01.17-23.10.26:261][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2021.01.17-23.10.26:261][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1660 SUPER
+[2021.01.17-23.10.26:261][  0]LogD3D11RHI:   Driver Version: 452.06 (internal:27.21.14.5206, unified:452.06)
+[2021.01.17-23.10.26:261][  0]LogD3D11RHI:      Driver Date: 8-12-2020
+[2021.01.17-23.10.26:261][  0]LogRHI: Texture pool is 4193 MB (70% of 5991 MB)
+[2021.01.17-23.10.26:306][  0]LogD3D11RHI: Async texture creation enabled
+[2021.01.17-23.10.26:316][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.01.17-23.10.26:317][  0]LogShaderCompilers: Guid format shader working directory is -28 characters bigger than the processId version (../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Intermediate/Shaders/WorkingDirectory/4876/).
+[2021.01.17-23.10.26:317][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Adamk/AppData/Local/Temp/UnrealShaderWorkingDir/542A83B546760706657903A1834BA638/'.
+[2021.01.17-23.10.26:532][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2021.01.17-23.10.26:543][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2021.01.17-23.10.26:554][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2021.01.17-23.10.26:565][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2021.01.17-23.10.26:577][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2021.01.17-23.10.26:588][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2021.01.17-23.10.26:599][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2021.01.17-23.10.26:611][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2021.01.17-23.10.26:616][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2021.01.17-23.10.26:683][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:683][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:683][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:683][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:683][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:683][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:683][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:683][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:683][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:683][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:683][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:683][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:683][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:684][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:684][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:684][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:684][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:684][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.01.17-23.10.26:685][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2021.01.17-23.10.26:740][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2021.01.17-23.10.26:740][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2021.01.17-23.10.26:759][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2021.01.17-23.10.26:759][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2021.01.17-23.10.26:769][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2021.01.17-23.10.26:780][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2021.01.17-23.10.26:790][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2021.01.17-23.10.26:800][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2021.01.17-23.10.26:808][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2021.01.17-23.10.26:808][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.01.17-23.10.26:852][  0]LogXGEController: Cleaning working directory: C:/Users/Adamk/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.01.17-23.10.26:852][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.01.17-23.10.26:852][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.01.17-23.10.26:852][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.01.17-23.10.27:586][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.01.17-23.10.27:629][  0]LogDerivedDataCache: Loaded boot cache 0.04s 71MB C:/Users/Adamk/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2021.01.17-23.10.27:629][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Adamk/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
+[2021.01.17-23.10.27:629][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.01.17-23.10.27:629][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.01.17-23.10.27:629][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.01.17-23.10.27:629][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.01.17-23.10.27:642][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.01.17-23.10.27:654][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Adamk/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.01.17-23.10.27:654][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.01.17-23.10.27:654][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.01.17-23.10.27:668][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2021.01.17-23.10.27:669][  0]LogSlate: Using FreeType 2.6.0
+[2021.01.17-23.10.27:670][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.01.17-23.10.27:737][  0]LogAssetRegistry: FAssetRegistry took 0.0250 seconds to start up
+[2021.01.17-23.10.28:010][  0]LogInit: Selected Device Profile: [Windows]
+[2021.01.17-23.10.28:117][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2021.01.17-23.10.28:120][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2021.01.17-23.10.28:120][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.01.17-23.10.28:120][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.01.17-23.10.28:120][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2021.01.17-23.10.28:131][  0]LogNetVersion: MyProject 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 1110078900)
+[2021.01.17-23.10.28:511][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.065596 seconds
+[2021.01.17-23.10.28:515][  0]LogUObjectArray: 38425 objects as part of root set at end of initial load.
+[2021.01.17-23.10.28:515][  0]LogUObjectAllocator: 6690864 out of 0 bytes used by permanent object pool.
+[2021.01.17-23.10.28:515][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.01.17-23.10.29:256][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.01.17-23.10.29:268][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.01.17-23.10.29:389][  0]SourceControl: Source control is disabled
+[2021.01.17-23.10.29:389][  0]SourceControl: Source control is disabled
+[2021.01.17-23.10.29:390][  0]SourceControl: Source control is disabled
+[2021.01.17-23.10.29:391][  0]SourceControl: Source control is disabled
+[2021.01.17-23.10.29:535][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.01.17-23.10.29:580][  0]LogOcInput: OculusInput pre-init called
+[2021.01.17-23.10.29:630][  0]LogEngine: Initializing Engine...
+[2021.01.17-23.10.29:631][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.01.17-23.10.29:632][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2021.01.17-23.10.29:632][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2021.01.17-23.10.29:632][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2021.01.17-23.10.29:632][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2021.01.17-23.10.29:802][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.01.17-23.10.29:811][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.01.17-23.10.29:823][  0]LogInit: XAudio2 using 'Głośniki (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2021.01.17-23.10.29:847][  0]LogInit: FAudioDevice initialized.
+[2021.01.17-23.10.29:847][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.01.17-23.10.29:925][  0]LogDerivedDataCache: Saved boot cache 0.08s 71MB C:/Users/Adamk/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2021.01.17-23.10.29:931][  0]LogInit: Texture streaming: Enabled
+[2021.01.17-23.10.29:944][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.01.17-23.10.29:953][  0]LogInit: Transaction tracking system initialized
+[2021.01.17-23.10.29:968][  0]BlueprintLog: New page: Editor Load
+[2021.01.17-23.10.30:021][  0]LocalizationService: Localization service is disabled
+[2021.01.17-23.10.30:232][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.01.17-23.10.30:232][  0]LogCook: Display: Mobile HDR setting 1
+[2021.01.17-23.10.30:232][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2021.01.17-23.10.30:232][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2021.01.17-23.10.30:232][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2021.01.17-23.10.30:232][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2021.01.17-23.10.30:232][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2021.01.17-23.10.30:320][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/' took 0.01s
+[2021.01.17-23.10.30:320][  0]SourceControl: Source control is disabled
+[2021.01.17-23.10.30:320][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/MazeGameAK.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.01.17-23.10.30:320][  0]LightingResults: New page: Lighting Build
+[2021.01.17-23.10.30:322][  0]MapCheck: New page: Map Check
+[2021.01.17-23.10.30:322][  0]LightingResults: New page: Lighting Build
+[2021.01.17-23.10.30:494][  0]LogAIModule: Creating AISystem for world MazeGameAK
+[2021.01.17-23.10.30:498][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.01.17-23.10.30:519][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.01.17-23.10.30:587][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 68,036ms to complete.
+[2021.01.17-23.10.30:587][  0]LogFileHelpers: Loading map 'MazeGameAK' took 0.267
+[2021.01.17-23.10.30:665][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.10.30:671][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.10.30:676][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.10.30:681][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.10.30:686][  0]LogCollectionManager: Loaded 0 collections in 0.001230 seconds
+[2021.01.17-23.10.30:725][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Saved/Collections/' took 0.01s
+[2021.01.17-23.10.30:725][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/Developers/Adamk/Collections/' took 0.01s
+[2021.01.17-23.10.30:725][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/Collections/' took 0.01s
+[2021.01.17-23.10.30:725][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2021.01.17-23.10.30:733][  0]LogContentBrowser: Native class hierarchy populated in 0.0070 seconds. Added 2572 classes and 603 folders.
+[2021.01.17-23.10.30:737][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2021.01.17-23.10.30:776][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2021.01.17-23.10.30:780][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
+[2021.01.17-23.10.30:831][  0]LogSlate: Took 0.000166 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.01.17-23.10.30:833][  0]LogSlate: Took 0.000154 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.01.17-23.10.30:836][  0]LogSlate: Took 0.000184 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.01.17-23.10.30:904][  0]LogRenderer: Reallocating scene render targets to support 1304x708 Format 10 NumSamples 1 (Frame:1).
+[2021.01.17-23.10.30:932][  0]LogSlate: Took 0.000164 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.01.17-23.10.31:036][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2021.01.17-23.10.31:036][  0]LogLoad: (Engine Initialization) Total time: 7.15 seconds
+[2021.01.17-23.10.31:036][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.01.17-23.10.31:064][  0]LogAssetRegistry: Asset discovery search completed in 3.3480 seconds
+[2021.01.17-23.10.31:065][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2021.01.17-23.10.31:065][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000045 seconds (updated 0 objects)
+[2021.01.17-23.10.31:067][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.01.17-23.10.34:320][376]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2021.01.17-23.10.37:530][744]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.10.41:438][750]LogSlate: Took 0.000154 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.01.17-23.10.41:447][750]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Adamk/OneDrive/Pulpit/STUDIA/Rok 2/3D proj/ok 2.fbx)
+[2021.01.17-23.10.41:462][750]LogFbx: Loading FBX Scene from ../../../../../../Users/Adamk/OneDrive/Pulpit/STUDIA/Rok 2/3D proj/ok 2.fbx
+[2021.01.17-23.10.41:470][750]LogFbx: FBX Scene Loaded Succesfully
+[2021.01.17-23.10.43:124][750]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.01.17-23.10.43:263][750]LogMaterial: Display: Missing cached shader map for material Material_001, compiling. 
+[2021.01.17-23.10.43:293][750]LogFbx: Warning: Triangulating static mesh Plane
+[2021.01.17-23.10.43:500][750]LogShaderCompilers: Display: Shaders left to compile 22
+[2021.01.17-23.10.43:500][750]LogShaderCompilers: Display: Shaders left to compile 12
+[2021.01.17-23.10.43:500][750]LogShaderCompilers: Display: Shaders left to compile 2
+[2021.01.17-23.10.43:539][750]LogStaticMesh: Building static mesh ok_2...
+[2021.01.17-23.10.43:627][750]LogStaticMesh: Built static mesh [0.09s] /Game/ok_2.ok_2
+[2021.01.17-23.10.43:645][750]LogStaticMesh: Warning: ok_2 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.01.17-23.10.43:645][750]LogStaticMesh: Warning: ok_2 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.01.17-23.10.43:675][750]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2021.01.17-23.10.43:675][750]FBXImport: Warning: ok_2 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.01.17-23.10.43:675][750]FBXImport: Warning: ok_2 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.01.17-23.10.44:898][876]LogSlate: Window 'Message Log' being destroyed
+[2021.01.17-23.10.44:902][876]LogSlate: Window 'Message Log' being destroyed
+[2021.01.17-23.10.47:574][191]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.10.47:687][204]LogActorFactory: Actor Factory created ok_2
+[2021.01.17-23.10.49:085][371]LogActorFactory: Actor Factory created ok_2
+[2021.01.17-23.10.49:760][448]LogSlate: Took 0.000150 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.01.17-23.10.50:730][564]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.10.53:960][951]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2021.01.17-23.10.59:117][549]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Sphere)
+[2021.01.17-23.11.05:008][246]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2021.01.17-23.11.07:262][505]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2021.01.17-23.11.10:119][842]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (ok_2)
+[2021.01.17-23.11.11:538][  8]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.11.34:529][754]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2021.01.17-23.11.42:701][716]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2021.01.17-23.11.44:451][921]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2021.01.17-23.11.44:452][921]LogAssetEditorManager: Opening Asset editor for LevelScriptBlueprint /Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK
+[2021.01.17-23.11.44:894][921]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 116 classes and 0 folders.
+[2021.01.17-23.11.45:432][921]LogSlate: Took 0.000187 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2021.01.17-23.12.34:406][683]BlueprintLog: New page: Compile MazeGameAK
+[2021.01.17-23.12.37:060][986]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2021.01.17-23.12.38:361][138]Cmd: DELETE
+[2021.01.17-23.12.38:361][138]Cmd: ACTOR DELETE
+[2021.01.17-23.12.38:365][138]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2021.01.17-23.12.42:858][138]LogSlate: Window 'Message' being destroyed
+[2021.01.17-23.12.42:883][138]LogEditorActor: Deleted 0 Actors (4.521 secs)
+[2021.01.17-23.12.45:399][425]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.13.14:428][895]BlueprintLog: New page: Compile MazeGameAK
+[2021.01.17-23.13.17:212][215]LogSlate: Window 'MazeGameAK* - Level Blueprint Editor' being destroyed
+[2021.01.17-23.13.17:216][215]LogSlate: Window 'MazeGameAK* - Level Blueprint Editor' being destroyed
+[2021.01.17-23.13.18:955][421]Cmd: DELETE
+[2021.01.17-23.13.18:955][421]Cmd: ACTOR DELETE
+[2021.01.17-23.13.18:957][421]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.01.17-23.13.18:980][421]LogEditorActor: Deleted 1 Actors (0.025 secs)
+[2021.01.17-23.13.20:393][591]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.17-23.13.20:402][591]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.13.20:403][591]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.17-23.13.20:414][591]PIE: New page: PIE session: MazeGameAK (18 sty 2021, 01:13:20)
+[2021.01.17-23.13.20:414][591]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_MazeGameAK
+[2021.01.17-23.13.20:416][591]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002035s)
+[2021.01.17-23.13.20:417][591]LogAIModule: Creating AISystem for world MazeGameAK
+[2021.01.17-23.13.20:417][591]LogPlayLevel: PIE: World Init took: (0.000582s)
+[2021.01.17-23.13.20:417][591]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MazeGameAK.MazeGameAK to /Game/UEDPIE_0_MazeGameAK.MazeGameAK (0.002746s)
+[2021.01.17-23.13.20:443][591]LogInit: XAudio2 using 'Głośniki (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2021.01.17-23.13.20:463][591]LogInit: FAudioDevice initialized.
+[2021.01.17-23.13.20:504][591]LogLoad: Game class is 'GameModeBase'
+[2021.01.17-23.13.20:505][591]LogWorld: Bringing World /Game/UEDPIE_0_MazeGameAK.MazeGameAK up for play (max tick rate 0) at 2021.01.18-00.13.20
+[2021.01.17-23.13.20:505][591]LogWorld: Bringing up level for play took: 0.000516
+[2021.01.17-23.13.20:524][591]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0002 seconds. Added 10 classes and 0 folders.
+[2021.01.17-23.13.20:524][591]PIE: Play in editor start time for /Game/UEDPIE_0_MazeGameAK 0,494
+[2021.01.17-23.13.20:524][591]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.13.21:072][655]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:080][656]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:096][658]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:104][659]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:113][660]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:121][661]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:129][662]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:138][663]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:146][664]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:154][665]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:162][666]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:171][667]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:179][668]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:188][669]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:196][670]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:205][671]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:213][672]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:221][673]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:230][674]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:238][675]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:246][676]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:255][677]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:263][678]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:272][679]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:280][680]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:288][681]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:296][682]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:304][683]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:313][684]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:321][685]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:329][686]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:338][687]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:346][688]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:355][689]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:363][690]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:371][691]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:379][692]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:388][693]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:396][694]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:404][695]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:413][696]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:421][697]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:429][698]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:438][699]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:447][700]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:455][701]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:471][703]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:479][704]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:488][705]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:496][706]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:505][707]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:513][708]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:521][709]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:530][710]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:554][713]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:621][721]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:629][722]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:638][723]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:646][724]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:655][725]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:663][726]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:671][727]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:679][728]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:688][729]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:696][730]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:704][731]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:713][732]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:721][733]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:729][734]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:738][735]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:746][736]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:754][737]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:763][738]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:771][739]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:780][740]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:788][741]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:796][742]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:805][743]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:813][744]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:821][745]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:830][746]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:838][747]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:846][748]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:855][749]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:863][750]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:871][751]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:880][752]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:888][753]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:896][754]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:905][755]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:913][756]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:921][757]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:930][758]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:938][759]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:947][760]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:955][761]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:963][762]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:971][763]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:979][764]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:988][765]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.21:996][766]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:005][767]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:013][768]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:021][769]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:030][770]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:038][771]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:046][772]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:055][773]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:063][774]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:072][775]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:080][776]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:088][777]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:096][778]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:105][779]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:113][780]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:122][781]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:130][782]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:138][783]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:147][784]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:154][785]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:162][786]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:171][787]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:179][788]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:187][789]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:196][790]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:204][791]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:213][792]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:221][793]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:230][794]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:238][795]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:246][796]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:255][797]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:263][798]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:271][799]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:280][800]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:288][801]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:296][802]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:305][803]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:313][804]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:321][805]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:330][806]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:338][807]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:346][808]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:355][809]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:363][810]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:371][811]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:380][812]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:388][813]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:396][814]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:405][815]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:413][816]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:421][817]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:430][818]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:438][819]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:446][820]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:454][821]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:463][822]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:471][823]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:479][824]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:487][825]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:496][826]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:505][827]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:513][828]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:522][829]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:530][830]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:538][831]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:547][832]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:555][833]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:563][834]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:572][835]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:579][836]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:587][837]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:596][838]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:604][839]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:612][840]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:621][841]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:629][842]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:638][843]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:646][844]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:654][845]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:854][869]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:863][870]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:871][871]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:879][872]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:888][873]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:896][874]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:904][875]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:913][876]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:921][877]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:929][878]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:938][879]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:946][880]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:954][881]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:963][882]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:971][883]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:979][884]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:988][885]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.22:996][886]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:004][887]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:012][888]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:104][899]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:113][900]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:121][901]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:129][902]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:138][903]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:146][904]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:155][905]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:163][906]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:171][907]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:180][908]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:188][909]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:196][910]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:205][911]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:213][912]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:221][913]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:230][914]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:238][915]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:246][916]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:255][917]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:263][918]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:271][919]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:313][924]PIE: Warning: Mobility of /Game/UEDPIE_0_MazeGameAK.MazeGameAK:PersistentLevel.Platform : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2021.01.17-23.13.23:338][927]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.13.23:338][927]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.13.23:374][927]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.17-23.13.23:374][927]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.13.23:395][927]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.13.23:439][930]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2021.01.17-23.13.23:973][994]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Platform)
+[2021.01.17-23.13.29:167][613]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.13.30:452][767]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.17-23.13.30:462][767]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.13.30:462][767]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.17-23.13.30:462][767]PIE: New page: PIE session: MazeGameAK (18 sty 2021, 01:13:30)
+[2021.01.17-23.13.30:462][767]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_MazeGameAK
+[2021.01.17-23.13.30:464][767]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001832s)
+[2021.01.17-23.13.30:464][767]LogAIModule: Creating AISystem for world MazeGameAK
+[2021.01.17-23.13.30:465][767]LogPlayLevel: PIE: World Init took: (0.000665s)
+[2021.01.17-23.13.30:465][767]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MazeGameAK.MazeGameAK to /Game/UEDPIE_0_MazeGameAK.MazeGameAK (0.002723s)
+[2021.01.17-23.13.30:491][767]LogInit: XAudio2 using 'Głośniki (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2021.01.17-23.13.30:509][767]LogInit: FAudioDevice initialized.
+[2021.01.17-23.13.30:539][767]LogLoad: Game class is 'GameModeBase'
+[2021.01.17-23.13.30:540][767]LogWorld: Bringing World /Game/UEDPIE_0_MazeGameAK.MazeGameAK up for play (max tick rate 0) at 2021.01.18-00.13.30
+[2021.01.17-23.13.30:540][767]LogWorld: Bringing up level for play took: 0.000484
+[2021.01.17-23.13.30:553][767]PIE: Play in editor start time for /Game/UEDPIE_0_MazeGameAK 0,521
+[2021.01.17-23.13.30:553][767]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.13.32:432][991]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.13.32:432][991]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.13.32:461][991]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.17-23.13.32:461][991]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.13.32:484][991]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.13.32:531][995]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2021.01.17-23.13.33:140][ 68]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Platform)
+[2021.01.17-23.13.35:603][359]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.13.54:491][625]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.17-23.13.54:500][625]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.13.54:500][625]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.17-23.13.54:501][625]PIE: New page: PIE session: MazeGameAK (18 sty 2021, 01:13:54)
+[2021.01.17-23.13.54:501][625]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_MazeGameAK
+[2021.01.17-23.13.54:503][625]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001924s)
+[2021.01.17-23.13.54:503][625]LogAIModule: Creating AISystem for world MazeGameAK
+[2021.01.17-23.13.54:503][625]LogPlayLevel: PIE: World Init took: (0.000648s)
+[2021.01.17-23.13.54:503][625]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MazeGameAK.MazeGameAK to /Game/UEDPIE_0_MazeGameAK.MazeGameAK (0.002810s)
+[2021.01.17-23.13.54:531][625]LogInit: XAudio2 using 'Głośniki (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2021.01.17-23.13.54:549][625]LogInit: FAudioDevice initialized.
+[2021.01.17-23.13.54:577][625]LogLoad: Game class is 'GameModeBase'
+[2021.01.17-23.13.54:578][625]LogWorld: Bringing World /Game/UEDPIE_0_MazeGameAK.MazeGameAK up for play (max tick rate 0) at 2021.01.18-00.13.54
+[2021.01.17-23.13.54:578][625]LogWorld: Bringing up level for play took: 0.000446
+[2021.01.17-23.13.54:590][625]PIE: Play in editor start time for /Game/UEDPIE_0_MazeGameAK 0,559
+[2021.01.17-23.13.54:591][625]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.14.00:881][378]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.14.00:881][378]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.14.00:915][378]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.17-23.14.00:915][378]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.14.00:941][378]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.14.00:979][382]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2021.01.17-23.14.01:888][491]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.14.01:963][500]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.17-23.14.01:973][500]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.14.01:973][500]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.17-23.14.01:973][500]PIE: New page: PIE session: MazeGameAK (18 sty 2021, 01:14:01)
+[2021.01.17-23.14.01:973][500]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_MazeGameAK
+[2021.01.17-23.14.01:975][500]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001897s)
+[2021.01.17-23.14.01:975][500]LogAIModule: Creating AISystem for world MazeGameAK
+[2021.01.17-23.14.01:976][500]LogPlayLevel: PIE: World Init took: (0.000624s)
+[2021.01.17-23.14.01:976][500]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MazeGameAK.MazeGameAK to /Game/UEDPIE_0_MazeGameAK.MazeGameAK (0.002665s)
+[2021.01.17-23.14.02:001][500]LogInit: XAudio2 using 'Głośniki (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2021.01.17-23.14.02:020][500]LogInit: FAudioDevice initialized.
+[2021.01.17-23.14.02:049][500]LogLoad: Game class is 'GameModeBase'
+[2021.01.17-23.14.02:050][500]LogWorld: Bringing World /Game/UEDPIE_0_MazeGameAK.MazeGameAK up for play (max tick rate 0) at 2021.01.18-00.14.02
+[2021.01.17-23.14.02:050][500]LogWorld: Bringing up level for play took: 0.000444
+[2021.01.17-23.14.02:062][500]PIE: Play in editor start time for /Game/UEDPIE_0_MazeGameAK 0,032
+[2021.01.17-23.14.02:063][500]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.14.11:083][581]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.14.11:083][581]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.14.11:113][581]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.17-23.14.11:113][581]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.14.11:138][581]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.14.11:185][585]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2021.01.17-23.14.11:793][658]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Platform)
+[2021.01.17-23.14.13:229][826]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.14.13:377][843]LogAssetEditorManager: Opening Asset editor for StaticMesh /Game/ok_2.ok_2
+[2021.01.17-23.14.13:768][843]LogRenderer: Reallocating scene render targets to support 1432x964 Format 10 NumSamples 1 (Frame:1).
+[2021.01.17-23.14.21:384][743]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2021.01.17-23.14.27:357][449]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ok_2" FILE="../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/ok_2.uasset" SILENT=true
+[2021.01.17-23.14.27:377][449]LogSavePackage: Moving '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Saved/ok_2FA03A1B14DBB184E318924B5DA9A21C1.tmp' to '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/ok_2.uasset'
+[2021.01.17-23.14.28:890][630]LogSlate: Window 'ok_2' being destroyed
+[2021.01.17-23.14.28:894][630]LogSlate: Window 'ok_2' being destroyed
+[2021.01.17-23.14.29:674][715]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.17-23.14.29:683][715]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.14.29:683][715]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.17-23.14.29:683][715]PIE: New page: PIE session: MazeGameAK (18 sty 2021, 01:14:29)
+[2021.01.17-23.14.29:683][715]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_MazeGameAK
+[2021.01.17-23.14.29:685][715]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001949s)
+[2021.01.17-23.14.29:685][715]LogAIModule: Creating AISystem for world MazeGameAK
+[2021.01.17-23.14.29:685][715]LogPlayLevel: PIE: World Init took: (0.000530s)
+[2021.01.17-23.14.29:685][715]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MazeGameAK.MazeGameAK to /Game/UEDPIE_0_MazeGameAK.MazeGameAK (0.002598s)
+[2021.01.17-23.14.29:713][715]LogInit: XAudio2 using 'Głośniki (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2021.01.17-23.14.29:731][715]LogInit: FAudioDevice initialized.
+[2021.01.17-23.14.29:760][715]LogLoad: Game class is 'GameModeBase'
+[2021.01.17-23.14.29:761][715]LogWorld: Bringing World /Game/UEDPIE_0_MazeGameAK.MazeGameAK up for play (max tick rate 0) at 2021.01.18-00.14.29
+[2021.01.17-23.14.29:762][715]LogWorld: Bringing up level for play took: 0.000438
+[2021.01.17-23.14.29:773][715]PIE: Play in editor start time for /Game/UEDPIE_0_MazeGameAK -0,258
+[2021.01.17-23.14.29:773][715]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.14.44:370][465]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.14.44:370][465]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.14.44:401][465]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.17-23.14.44:401][465]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.14.44:424][465]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.14.44:472][469]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2021.01.17-23.14.51:700][335]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.14.51:794][346]LogActorFactory: Actor Factory created Cube
+[2021.01.17-23.14.52:430][422]LogActorFactory: Actor Factory created Cube
+[2021.01.17-23.15.11:671][700]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2021.01.17-23.15.12:189][759]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.15.12:247][766]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.17-23.15.12:257][766]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.15.12:257][766]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.17-23.15.12:257][766]PIE: New page: PIE session: MazeGameAK (18 sty 2021, 01:15:12)
+[2021.01.17-23.15.12:257][766]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_MazeGameAK
+[2021.01.17-23.15.12:259][766]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001949s)
+[2021.01.17-23.15.12:259][766]LogAIModule: Creating AISystem for world MazeGameAK
+[2021.01.17-23.15.12:259][766]LogPlayLevel: PIE: World Init took: (0.000553s)
+[2021.01.17-23.15.12:259][766]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MazeGameAK.MazeGameAK to /Game/UEDPIE_0_MazeGameAK.MazeGameAK (0.002662s)
+[2021.01.17-23.15.12:287][766]LogInit: XAudio2 using 'Głośniki (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2021.01.17-23.15.12:306][766]LogInit: FAudioDevice initialized.
+[2021.01.17-23.15.12:333][766]LogLoad: Game class is 'GameModeBase'
+[2021.01.17-23.15.12:334][766]LogWorld: Bringing World /Game/UEDPIE_0_MazeGameAK.MazeGameAK up for play (max tick rate 0) at 2021.01.18-00.15.12
+[2021.01.17-23.15.12:334][766]LogWorld: Bringing up level for play took: 0.000479
+[2021.01.17-23.15.12:346][766]PIE: Play in editor start time for /Game/UEDPIE_0_MazeGameAK 0,316
+[2021.01.17-23.15.12:347][766]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.15.15:317][121]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.15.15:318][121]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.15.15:351][121]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.17-23.15.15:351][121]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.15.15:375][121]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.15.15:423][125]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2021.01.17-23.15.15:982][192]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2021.01.17-23.15.17:559][376]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.15.27:808][600]EditorErrors: New page: Actor attachment
+[2021.01.17-23.15.29:044][748]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.17-23.15.29:052][748]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.15.29:052][748]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.17-23.15.29:052][748]PIE: New page: PIE session: MazeGameAK (18 sty 2021, 01:15:29)
+[2021.01.17-23.15.29:052][748]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_MazeGameAK
+[2021.01.17-23.15.29:054][748]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001931s)
+[2021.01.17-23.15.29:055][748]LogAIModule: Creating AISystem for world MazeGameAK
+[2021.01.17-23.15.29:055][748]LogPlayLevel: PIE: World Init took: (0.000550s)
+[2021.01.17-23.15.29:055][748]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MazeGameAK.MazeGameAK to /Game/UEDPIE_0_MazeGameAK.MazeGameAK (0.002591s)
+[2021.01.17-23.15.29:082][748]LogInit: XAudio2 using 'Głośniki (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2021.01.17-23.15.29:100][748]LogInit: FAudioDevice initialized.
+[2021.01.17-23.15.29:128][748]LogLoad: Game class is 'GameModeBase'
+[2021.01.17-23.15.29:129][748]LogWorld: Bringing World /Game/UEDPIE_0_MazeGameAK.MazeGameAK up for play (max tick rate 0) at 2021.01.18-00.15.29
+[2021.01.17-23.15.29:129][748]LogWorld: Bringing up level for play took: 0.000480
+[2021.01.17-23.15.29:140][748]PIE: Play in editor start time for /Game/UEDPIE_0_MazeGameAK -0,89
+[2021.01.17-23.15.29:141][748]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.15.38:062][817]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.15.38:062][817]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.15.38:093][817]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.17-23.15.38:093][817]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.15.38:116][817]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.15.38:164][821]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2021.01.17-23.15.43:234][427]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
+[2021.01.17-23.15.45:555][689]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.01.17-23.15.45:959][736]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.15.46:041][746]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.17-23.15.46:051][746]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.15.46:051][746]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.17-23.15.46:051][746]PIE: New page: PIE session: MazeGameAK (18 sty 2021, 01:15:46)
+[2021.01.17-23.15.46:051][746]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_MazeGameAK
+[2021.01.17-23.15.46:053][746]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002021s)
+[2021.01.17-23.15.46:053][746]LogAIModule: Creating AISystem for world MazeGameAK
+[2021.01.17-23.15.46:054][746]LogPlayLevel: PIE: World Init took: (0.000669s)
+[2021.01.17-23.15.46:054][746]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MazeGameAK.MazeGameAK to /Game/UEDPIE_0_MazeGameAK.MazeGameAK (0.002877s)
+[2021.01.17-23.15.46:080][746]LogInit: XAudio2 using 'Głośniki (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2021.01.17-23.15.46:097][746]LogInit: FAudioDevice initialized.
+[2021.01.17-23.15.46:128][746]LogLoad: Game class is 'GameModeBase'
+[2021.01.17-23.15.46:129][746]LogWorld: Bringing World /Game/UEDPIE_0_MazeGameAK.MazeGameAK up for play (max tick rate 0) at 2021.01.18-00.15.46
+[2021.01.17-23.15.46:130][746]LogWorld: Bringing up level for play took: 0.000478
+[2021.01.17-23.15.46:142][746]PIE: Play in editor start time for /Game/UEDPIE_0_MazeGameAK 0,111
+[2021.01.17-23.15.46:142][746]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.15.59:756][378]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.15.59:756][378]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.15.59:790][378]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.17-23.15.59:790][378]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/MazeGameAK.MazeGameAK:PersistentLevel' has LevelScriptBlueprint '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK' with GeneratedClass '/Game/MazeGameAK.MazeGameAK_C' with ClassGeneratedBy '/Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK'
+[2021.01.17-23.15.59:817][378]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.17-23.15.59:857][381]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2021.01.17-23.16.18:233][584]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.17.43:782][ 19]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2021.01.17-23.17.45:133][178]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2021.01.17-23.17.45:135][178]LogAssetEditorManager: Opening Asset editor for LevelScriptBlueprint /Game/MazeGameAK.MazeGameAK:PersistentLevel.MazeGameAK
+[2021.01.17-23.17.49:275][613]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2021.01.17-23.18.24:666][452]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MazeGameAK" FILE="../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/MazeGameAK.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2021.01.17-23.18.24:851][452]LogSavePackage: Moving '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Saved/MazeGameAK074D037B41473ABF40B68E83E13F69B3.tmp' to '../../../../../../Users/Adamk/OneDrive/Dokumenty/Unreal Projects/MyProject/Content/MazeGameAK.umap'
+[2021.01.17-23.18.24:867][452]LogFileHelpers: Saving map 'MazeGameAK' took 0.283
+[2021.01.17-23.20.05:792][ 92]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2021.01.17-23.20.57:824][ 13]LogSlate: FSceneViewport::OnFocusLost() reason 0
